@@ -1,13 +1,21 @@
 # 青年大学习打卡
 ### 使用方法：
 1、创建一个Cloudflare worker （具体方法自行Google）
+
 2、复制index.js中的代码到Cloudflare worker中
+
 3、通过抓包获取你所在学校的打卡配置信息，或去issue中查看有没有同省份的同学分享
+
 4、根据获得的打卡配置信息修改代码中的配置项
+
 5、部署worker
+
 6、通过向worker发送post请求即可完成打卡,请求内容为包含姓名和手机号码的json文件{name:"xxx",number:"13309909090"}
+
 post请求示例：
+
 url:xxx.xxx.workers.dev
+
 {name:"xxx",number:"13309909090"}
 
 ### 注意事项：
